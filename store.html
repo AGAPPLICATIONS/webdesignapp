@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <title>Store</title>
+    <!-- link p5.js and its addons like p5.dom.js or p5.sound.js -->
+    <script src="lib/p5.min.js" type="text/javascript"></script>
+    <!-- link p5.play.js -->
+    <script src="lib/p5.play.js" type="text/javascript"></script>
+    <!-- link p5.dom.js -->
+    <script src="lib/p5.dom.js" type="text/javascript"></script>
+
+    <!-- link your javascript sketch -->
+    <script src="scripts/sprites.js" type="text/javascript"></script>
+
+    <script src="main.js" type="text/javascript"></script>
+
+    <script src="characters_environment.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+</head>
+
+<body background="img.png">
+    <header onclick="placeholder()" class="header">
+        <img src="Untitled.png" class="logo">
+        <nav class="headernav">
+            <a href="home.html">Home</a>
+            <a href="store.html">Store</a>
+            <a href="aboutus.html">About us</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+
+    </header>
+    <br><br>
+    <center>
+        <h1>Koshish- Store</h1>
+        <h4><i>Browse our endless assortment of natural, Indian handicrafts
+            </i></h4>
+    </center>
+    <center>
+        <div class="container">
+            <button class="btn btn-basic button" data-toggle="modal" data-target="#1">
+                <img src="CoasterSet.png" width="80%" class="img"><br>
+                <hr width="80%" height="2px" style="color: black;">Handmade coasters
+            </button>
+            <button class="btn btn-basic button" data-toggle="modal" data-target="#2">
+                <img src="PenHolder.png" width="80%" class="img"><br><br>Handmade Pen Stands
+            </button>
+            <button class="btn btn-basic button" data-toggle="modal" data-target="#3">
+                <img src="UtilityBaskets.png" width="60%" class="img"><br>Handmade Utility Baskets
+            </button>
+        </div>
+        <br>
+        <div class="container">
+            <button class="btn btn-basic button" data-toggle="modal" data-target="#4">
+                <img src="DesignerTrays2.png" width="80%" class="img"><br>Handmade Trays</button>
+            <button class="btn btn-basic button" data-toggle="modal" data-target="#5">
+                <img src="TissueBox3.png" width="80%" class="img"><br>Handmade Tissue Boxes
+            </button>
+            <button class="btn btn-basic button" data-toggle="modal" data-target="#6">
+                <img src="TableMats.png" width="80%" class="img"><br>Handmade Table Mats
+            </button>
+        </div>
+
+
+        <div class="container">
+            <button class="btn btn-basic button" data-toggle="modal" data-target="#7">
+                <img src="CustomizedJars.png" width="80%" class="img"><br>Handmade Customised Jars</button>
+            <button class="btn btn-basic button" data-toggle="modal" data-target="#8">
+                <img src="CustomizedGlassBottle.png" width="60%" class="img"><br>Handmade Custom Glass Bottles
+            </button>
+            <button class="btn btn-basic button" data-toggle="modal" data-target="#9">
+                <img src="DiningTableOrganizer.png" width="80%" class="img"><br>Handmade Dining Table Organiser
+            </button>
+        </div>
+        <div class="container">
+            <button class="btn btn-basic button" data-toggle="modal" data-target="#10">
+                <img src="GiftHamper1.png" width="80%" class="img"><br>Handmade Gift Hamper</button>
+            <button class="btn btn-basic button" data-toggle="modal" data-target="#11">
+                <img src="PhotoFrame.png" width="80%" class="img"><br>Handmade Photo Frame
+            </button>
+            <button class="btn btn-basic button" data-toggle="modal" data-target="#12">
+                <img src="GiftBox1.png" width="80%" class="img"><br>Handmade Gift Box
+            </button>
+        </div>
+        <div class="container">
+            <button class="btn btn-basic button" data-toggle="modal" data-target="#13">
+                <img src="PhoneChargingStation.png" width="80%" class="img"><br>Handmade Phone Charger</button>
+            <button class="btn btn-basic button" data-toggle="modal" data-target="#14">
+                <img src="DryFruitTray.png" width="80%" class="img"><br>Handmade Dry Fruit Trays
+            </button>
+            <button class="btn btn-basic button" data-toggle="modal" data-target="#15">
+                <img src="TeaTray.png" width="80%" class="img"><br>Handmade Tea Tray
+            </button>
+        </div>
+    </center>
+    <div id="1" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button data-dismiss="modal">&times;</button>
+                    <center>
+                        <h2>Handmade coasters</h2>
+                    </center>
+                </div>
+                <center>
+                    <div class="modal-body">
+                        <row width="100%">
+
+                            <div width="40%" style="margin-left: 5px !important;">
+                                <img src="CoasterSet.png" width="80%">
+                            </div>
+                            <h5>Our handmade coaters feature a variety of design all source from rural India.
+                                <br> Paired with their magnificent beauty they also have extreme durability and are sure
+                                to liven up your table for many years to come.</h5>
+                        </row>
+                        <br>
+                        <h3>Price:<br><b>Rs.10/Coaster</b>-Sold in packs of 6 </h3>
+                        <br>
+                        <button class="btn btn-basic" onclick="submit()">Order 1 Pack</button>
+                        <button class="btn btn-basic" onclick="submit()">Order 5 Packs</button>
+                        <button class="btn btn-basic" onclick="submit()">Order 10 Packs</button>
+
+
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <div id="2" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button data-dismiss="modal">&times;</button>
+                    <center>
+                        <h2>Handmade Pen Stands</h2>
+                    </center>
+                </div>
+                <center>
+                    <div class="modal-body">
+                        <row width="100%">
+
+                            <div width="40%" style="margin-left: 5px !important;">
+                                <img src="PenHolder.png" width="80%">
+                            </div>
+                            <h5>Our handmade Pen holders from beautiful rural India are extremely durable evironmental
+                                friendly and cost efficient.
+                                <br>They are sure to keep your desk clutter-free for many years to come .</h5>
+                        </row>
+                        <br>
+                        <h3>Price:<br><b>Rs.50/ Holder</b> </h3>
+                        <br>
+                        <button class="btn btn-basic" onclick="submit()">Order 1 </button>
+                        <button class="btn btn-basic" onclick="submit()">Order 5 </button>
+                        <button class="btn btn-basic" onclick="submit()">Order 10 </button>
+
+
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <div id="3" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button data-dismiss="modal">&times;</button>
+                    <center>
+                        <h2>Handmade Utility Baskets</h2>
+                    </center>
+                </div>
+                <center>
+                    <div class="modal-body">
+                        <row width="100%">
+
+                            <div width="40%" style="margin-left: 5px !important;">
+                                <img src="UtilityBaskets.png" width="80%">
+                            </div>
+                            <h5>Our handmade utility baskets come in all shapes and sizes and are sure to suit your
+                                every need.<br>
+                                their exquisite design and unfaltering durability will be sure to liven up your house
+                                where ever the may be.</h5>
+                        </row>
+                        <br>
+                        <h3>Price:<br><b>Rs.60/ Basket</b> </h3>
+                        <br>
+                        <button class="btn btn-basic" onclick="submit()">Order 1 </button>
+                        <button class="btn btn-basic" onclick="submit()">Order 5 </button>
+                        <button class="btn btn-basic" onclick="submit()">Order 10 </button>
+
+
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <div id="4" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button data-dismiss="modal">&times;</button>
+                    <center>
+                        <h2>Handmade Trays</h2>
+                    </center>
+                </div>
+                <center>
+                    <div class="modal-body">
+                        <row width="100%">
+
+                            <div width="40%" style="margin-left: 5px !important;">
+                                <img src="DesignerTrays2.png" width="80%">
+                            </div>
+                            <h5>Our endless variety of designer trays sourced directly from the rolling hills of Assam
+                                are sure to put a smile on the face of your guests.
+                                <br>
+                                We guarentee their durability!
+                            </h5>
+                        </row>
+                        <br>
+                        <h3>Price:<br><b>Rs.70/ Tray</b> </h3>
+                        <br>
+                        <button class="btn btn-basic" onclick="submit()">Order 1 </button>
+                        <button class="btn btn-basic" onclick="submit()">Order 5 </button>
+                        <button class="btn btn-basic" onclick="submit()">Order 10 </button>
+
+
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <div id="5" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button data-dismiss="modal">&times;</button>
+                    <center>
+                        <h2>Handmade Tissue Boxes</h2>
+                    </center>
+                </div>
+                <center>
+                    <div class="modal-body">
+                        <row width="100%">
+
+                            <div width="40%" style="margin-left: 5px !important;">
+                                <img src="TissueBox3.png" width="80%">
+                            </div>
+                            <h5>Our organic tissues and beautiful boxes are sure to serve any and all functions you may
+                                need them for!
+                                <br>
+                                We sell 30 tissues per Box!
+                            </h5>
+                        </row>
+                        <br>
+                        <h3>Price:<br><b>Rs.40/Box </b> </h3>
+                        <br>
+                        <button class="btn btn-basic" onclick="submit()">Order 1 </button>
+                        <button class="btn btn-basic" onclick="submit()">Order 5 </button>
+                        <button class="btn btn-basic" onclick="submit()">Order 10 </button>
+
+
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <div id="6" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button data-dismiss="modal">&times;</button>
+                    <center>
+                        <h2>Handmade Table Mats</h2>
+                    </center>
+                </div>
+                <center>
+                    <div class="modal-body">
+                        <row width="100%">
+
+                            <div width="40%" style="margin-left: 5px !important;">
+                                <img src="TableMats.png" width="80%">
+                            </div>
+                            <h5>Our table mats sourced from rural india are guarenteed to leave your table looking clean
+                                and neat even after the messiest meals.
+                                <br>
+                                
+                            </h5>
+                        </row>
+                        <br>
+                        <h3>Price:<br><b>Rs.10 </b> </h3>
+                        <br>
+                        <button class="btn btn-basic" onclick="submit()">Order 1 </button>
+                        <button class="btn btn-basic" onclick="submit()">Order 5 </button>
+                        <button class="btn btn-basic" onclick="submit()">Order 10 </button>
+
+
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+                   <div id="7" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button data-dismiss="modal">&times;</button>
+                    <center>
+                        <h2>Handmade customised Jars</h2>
+                    </center>
+                </div>
+                <center>
+                    <div class="modal-body">
+                        <row width="100%">
+
+                            <div width="40%" style="margin-left: 5px !important;">
+                                <img src="CustomizedJars.png" width="80%">
+                            </div>
+                            <h5>Handmade jars from organic glass that will not break easily.
+                                <br>They are a must have for any modern home .
+                                
+                            </h5>
+                        </row>
+                        <br>
+                        <h3>Price:<br><b>Rs.20/Jar </b> </h3>
+                        <br>
+                        <button class="btn btn-basic" onclick="submit()">Order 1 </button>
+                        <button class="btn btn-basic" onclick="submit()">Order 5 </button>
+                        <button class="btn btn-basic" onclick="submit()">Order 10 </button>
+
+
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+                    <div id="8" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+   <button data-dismiss="modal">&times;</button>
+   <center>
+       <h2>Handmade Custom Bottles</h2>
+   </center>
+                                </div>
+                                <center>
+   <div class="modal-body">
+       <row width="100%">
+                
+           <div width="40%" style="margin-left: 5px !important;">
+               <img src="CustomizedGlassBottle.png" class="lol">
+           </div>
+           <h5>Glass bottles made from organic glass using Assamese techniques.Extremely durable and pleasant to look at in your kitchen.
+               <br>
+            
+           </h5>
+       </row>
+       <br>
+       <h3>Price:<br><b>Rs.80/Bottle </b> </h3>
+       <br>
+       <button class="btn btn-basic" onclick="submit()">Order 1 </button>
+       <button class="btn btn-basic" onclick="submit()">Order 5 </button>
+       <button class="btn btn-basic" onclick="submit()">Order 10 </button>
+                
+                
+   </div>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+   <div id="9" class="modal fade">
+       <div class="modal-dialog">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <button data-dismiss="modal">&times;</button>
+                   <center>
+                       <h2>Handmade Custom Dining Table Organisers</h2>
+                   </center>
+               </div>
+               <center>
+                   <div class="modal-body">
+                       <row width="100%">
+                                
+                           <div width="40%" style="margin-left: 5px !important;">
+                               <img src="DiningTableOrganizer.png" width="80%">
+                           </div>
+                           <h5>Dining table organizers made from biodegradeable materials with beautiful designs.
+                               <br>
+                               They are sure to keep your dining table organized and beautiful.
+                           </h5>
+                       </row>
+                       <br>
+                       <h3>Price:<br><b>Rs.100/ Piece </b> </h3>
+                       <br>
+                       <button class="btn btn-basic" onclick="submit()">Order 1 </button>
+                       <button class="btn btn-basic" onclick="submit()">Order 5 </button>
+                       <button class="btn btn-basic" onclick="submit()">Order 10 </button>
+                                
+                                
+                   </div>
+               </center>
+           </div>
+       </div>
+   </div>
+                   <div id="10" class="modal fade">
+                       <div class="modal-dialog">
+                           <div class="modal-content">
+                               <div class="modal-header">
+  <button data-dismiss="modal">&times;</button>
+  <center>
+      <h2>Handmade Gift Hamper</h2>
+  </center>
+                               </div>
+                               <center>
+  <div class="modal-body">
+      <row width="100%">
+               
+          <div width="40%" style="margin-left: 5px !important;">
+              <img src="GiftHamper1.png" width="80%">
+          </div>
+          <h5>These beautiful, organic gift hampers are sure to put an extra large smile on the face of those recieving them.
+              <br>
+              
+          </h5>
+      </row>
+      <br>
+      <h3>Price:<br><b>Rs.10 / Piece </b> </h3>
+      <br>
+      <button class="btn btn-basic" onclick="submit()">Order 1 </button>
+      <button class="btn btn-basic" onclick="submit()">Order 5 </button>
+      <button class="btn btn-basic" onclick="submit()">Order 10 </button>
+               
+               
+  </div>
+                               </center>
+                           </div>
+                       </div>
+                   </div>
+  <div id="11" class="modal fade">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button data-dismiss="modal">&times;</button>
+                  <center>
+                      <h2>Handmade Photo Frame</h2>
+                  </center>
+              </div>
+              <center>
+                  <div class="modal-body">
+                      <row width="100%">
+                               
+                          <div width="40%" style="margin-left: 5px !important;">
+                              <img src="PhotoFrame.png" width="80%">
+                          </div>
+                          <h5>These beautiful organic photo frames will only add to the exquisite beauty of your best memories.
+                              <br>
+                              
+                          </h5>
+                      </row>
+                      <br>
+                      <h3>Price:<br><b>Rs.10 / Piece </b> </h3>
+                      <br>
+                      <button class="btn btn-basic" onclick="submit()">Order 1 </button>
+                      <button class="btn btn-basic" onclick="submit()">Order 5 </button>
+                      <button class="btn btn-basic" onclick="submit()">Order 10 </button>
+                               
+                               
+                  </div>
+              </center>
+          </div>
+      </div>
+  </div>
+                  <div id="12" class="modal fade">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+   <button data-dismiss="modal">&times;</button>
+   <center>
+       <h2>Handmade Gift Boxes</h2>
+   </center>
+                              </div>
+                              <center>
+   <div class="modal-body">
+       <row width="100%">
+              
+           <div width="40%" style="margin-left: 5px !important;">
+               <img src="GiftBox1.png" width="80%">
+           </div>
+           <h5>These beautiful handcrafted gift boxes will greatly enhance the splendor of whatever beautiful present you wish to give someone.
+               <br>
+               
+           </h5>
+       </row>
+       <br>
+       <h3>Price:<br><b>Rs.120 / Piece </b> </h3>
+       <br>
+       <button class="btn btn-basic" onclick="submit()">Order 1 </button>
+       <button class="btn btn-basic" onclick="submit()">Order 5 </button>
+       <button class="btn btn-basic" onclick="submit()">Order 10 </button>
+              
+              
+   </div>
+</center>
+</div>
+</div>
+</div>
+   <div id="13" class="modal fade">
+       <div class="modal-dialog">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <button data-dismiss="modal">&times;</button>
+                   <center>
+                       <h2>Handmade Phone Chargers</h2>
+                   </center>
+               </div>
+               <center>
+                   <div class="modal-body">
+                       <row width="100%">
+                              
+                           <div width="40%" style="margin-left: 5px !important;">
+                               <img src="PhoneChargingStation.png" width="80%">
+                           </div>
+                           <h5>These beautiful organic phone charging stations are sure to improve the busy enviorment of our everyday life.
+
+                               <br>
+                               
+                           </h5>
+                       </row>
+                       <br>
+                       <h3>Price:<br><b>Rs.45 / Piece</b> </h3>
+                       <br>
+                       <button class="btn btn-basic" onclick="submit()">Order 1 </button>
+                       <button class="btn btn-basic" onclick="submit()">Order 5 </button>
+                       <button class="btn btn-basic" onclick="submit()">Order 10 </button>
+                              
+                              
+                   </div>
+                </center>
+            </div>
+        </div>
+    </div>
+                   <div id="14" class="modal fade">
+                       <div class="modal-dialog">
+                           <div class="modal-content">
+                               <div class="modal-header">
+  <button data-dismiss="modal">&times;</button>
+  <center>
+      <h2>Handmade Dry Fruit trays</h2>
+  </center>
+                               </div>
+                               <center>
+  <div class="modal-body">
+      <row width="100%">
+               
+          <div width="40%" style="margin-left: 5px !important;">
+              <img src="DryFruitTray.png" width="80%">
+          </div>
+          <h5>Our Dry Fruit trays are sure to add an aesthetic pleasure to your social evening.
+              <br>
+              
+          </h5>
+      </row>
+      <br>
+      <h3>Price:<br><b>Rs.70 / Piece </b> </h3>
+      <br>
+      <button class="btn btn-basic" onclick="submit()">Order 1 </button>
+      <button class="btn btn-basic" onclick="submit()">Order 5 </button>
+      <button class="btn btn-basic" onclick="submit()">Order 10 </button>
+               
+               
+  </div>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+  <div id="15" class="modal fade">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button data-dismiss="modal">&times;</button>
+                  <center>
+                      <h2>Handmade Designer Trays</h2>
+                  </center>
+              </div>
+              <center>
+                  <div class="modal-body">
+                      <row width="100%">
+                               
+                          <div width="40%" style="margin-left: 5px !important;">
+                              <img src="DesignerTrays.png" width="80%">
+                          </div>
+                          <h5>These exquisite designer trays come in all shapes, patterns and sizes and are guaranteed to make your tea -time just a little better everyday.
+                              <br>
+                              
+                          </h5>
+                      </row>
+                      <br>
+                      <h3>Price:<br><b>Rs.10 / Piece</b> </h3>
+                      <br>
+                      <button class="btn btn-basic" onclick="submit()">Order 1 </button>
+                      <button class="btn btn-basic" onclick="submit()">Order 5 </button>
+                      <button class="btn btn-basic" onclick="submit()">Order 10 </button>
+                               
+                               
+                  </div>
+               </center>
+           </div>
+       </div>
+   </div>
+       
+
+<footer class="footer">
+    <center>
+        <p>By Arnav Grover and Kevin Jackson of
+            Sancta Maria
+            International School</p>
+    </center>
+</footer>
+                              
+</center>
+</div>
+</div>
+</div>
+</center>
+</div></div></div>
+</center>
+</div>
+</div>
+</div>
+</center>
+</div></div>
+</div></center></div></div></div></center></div></div></div></center>
+
+
+
+</body>

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+body{
+    background: url("pexels-ovan-62693.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;}
+    
+.header{
+    top: 0;
+    right:0;
+    position: fixed;
+    display: flex;
+    background-color: rgb(196, 196, 196);
+    width: 100%;
+    z-index:100px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 100px;
+}
+.headernav a{
+ position: relative;
+ font-size: 20px;
+ margin: 10px !important;
+ content: '';
+}
+.headernav a:hover{
+ font-size: 25px;
+ transition:0.8s;
+}
+.header img{
+left: 0;
+margin-right: 20px !important;
+}
+.footer{
+    bottom: 0;
+    left:0;
+    align-items: center !important;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    background-color:gray;
+    color:white;
+}
+.headernav{
+    padding: 20px !important;
+    justify-content: space-around;
+}
+h1{
+    margin-top: 120px !important;
+}
+.container{
+    display: inline-block;
+    margin: 20px;
+    justify-content: space-between;
+}
+.container button{
+    width: 25% !important;
+}
+row{
+    display: inline-block;
+}
+.logo{
+    width: 225px !important;
+    border-radius: 20px;
+}
+.img{
+    height: 200px !important;
+}
+.button{
+    height: 300px !important;
+    border-radius: 20px !important;
+    margin: 10px !important;
+}
+.abtusimg{
+    border-radius: 20px;
+    border: 6px black ridge;
+    height: 60% !important;
+    animation-name: lol;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.para{
+    font-size: 30px;
+    justify-content: space-evenly;
+    width: 80%;
+    align-content: space-evenly;
+    border: 6px black ridge;
+    padding: 10px;
+    text-decoration: dotted;
+    font-style: italic;
+
+}
+@keyframes lol{
+    0%{
+        border: 6px black ridge;
+    }
+    25%{
+        border: 8px rgb(255, 0, 0) ridge;
+    }
+    50%{
+        border: 10px rgb(0, 255, 0) ridge;
+    }
+    75%{
+        border: 8px rgb(0, 225, 255) ridge;
+    }
+    100%{
+        border: 6px rgb(178, 187, 0) ridge;
+    }
+}
+.faceimg{
+    margin-top: 120px;
+    border: 4px black ridge;
+    width: 400px;
+}
+.lol{
+    width: 250px !important;
+    height: 400px !important
+}
